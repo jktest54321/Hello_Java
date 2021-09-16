@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Compile'){
 			steps {
-        			build 'Git_Job';
+        			build 'git_job';
 				echo "Compiled Successfully!";
 			}
 		}
