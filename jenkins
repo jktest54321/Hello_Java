@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Compile'){
 			steps {
-        			javac  Hello.java;
+        			build 'Git_Job';
 				echo "Compiled Successfully!";
 			}
 		}
@@ -19,7 +19,7 @@ pipeline {
 		}
 		stage('Deploy'){
 			steps {
-        			java Hello;
+        		
 				echo " Pass!";
 			}
 		}
